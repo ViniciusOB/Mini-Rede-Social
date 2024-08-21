@@ -1,0 +1,273 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #333333; /* Cinza escuro */
+    line-height: 1.6;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Links */
+a {
+    color: #00796b; /* Verde escuro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004d40; /* Verde mais escuro */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #00796b; /* Verde escuro */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px; /* Bordas arredondadas */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Branco */
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #ffffff; /* Branco */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c8e6c9; /* Verde claro */
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background-color: #004d40; /* Verde mais escuro */
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #00796b; /* Verde escuro */
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas superiores */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Branco */
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #b2dfdb; /* Verde muito claro */
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff; /* Branco */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #00796b; /* Verde escuro */
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #00796b; /* Verde escuro */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #e0f2f1; /* Verde muito claro */
+    color: #00796b; /* Verde escuro */
+    transition: background-color 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #b2dfdb; /* Verde claro */
+    border-color: #004d40; /* Verde mais escuro */
+    outline: none;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #ffffff; /* Branco */
+}
+
+.btn-primary {
+    background-color: #00796b; /* Verde escuro */
+}
+
+.btn-primary:hover {
+    background-color: #004d40; /* Verde mais escuro */
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #d32f2f; /* Vermelho escuro */
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c; /* Vermelho mais escuro */
+    transform: translateY(-2px);
+}
+
+/* Cartões */
+.card {
+    background-color: #ffffff; /* Branco */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #004d40; /* Verde mais escuro */
+    padding: 1.5rem;
+    border-bottom: 1px solid #00796b; /* Verde escuro */
+    font-weight: 600;
+    color: #ffffff; /* Branco */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body img,
+.card-body iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid #00796b; /* Verde escuro */
+    font-size: 1rem;
+    background-color: #ffffff; /* Branco */
+    color: #00796b; /* Verde escuro */
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    background-color: #e0f2f1; /* Verde muito claro */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #004d40; /* Verde mais escuro */
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #00796b; /* Verde escuro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #00796b; /* Verde escuro */
+    color: #ffffff; /* Branco */
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #004d40; /* Verde mais escuro */
+    margin-top: 2rem;
+}
+
+/* Alertas */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.alert-danger {
+    background-color: #d32f2f; /* Vermelho escuro */
+    color: #ffffff; /* Branco */
+}
+
+.alert-success {
+    background-color: #388e3c; /* Verde escuro */
+    color: #ffffff; /* Branco */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
